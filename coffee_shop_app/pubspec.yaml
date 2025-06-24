@@ -1,0 +1,51 @@
+name: coffee_shop_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  # State Management: Riverpod
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.4
+  # Code Generation: Freezed and JSON
+  freezed_annotation: ^3.0.0
+  shared_preferences: ^2.2.2
+  json_annotation: ^4.9.0
+  geocoding: ^4.0.0
+  # HTTP Client
+  dio: ^5.3.4
+  permission_handler: ^12.0.0+1
+
+  # Location
+  geolocator: ^14.0.1
+  # Map (using google_maps_flutter as an example, requires setup)
+  google_maps_flutter: ^2.5.1
+  intl: ^0.20.2 
+  geolocator_platform_interface: ^4.2.6
+  # Utility for price generation (or just use dart:math)
+  # Add any other UI packages you might need
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  # Code Generation: Build Runner and Generators
+  build_runner: ^2.4.7
+  freezed: ^3.0.6
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.3.9
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/hot_drinks.json # <-- Make sure this line is here
+    - assets/cold_drinks.json # <-- Make sure this line is here
